@@ -1,0 +1,3 @@
+The minimization is divided in two steps using the steepest descent method for 1000 cycles. 
+
+In the first step (min1.mdp) no constraints are applied while in the second step (min2.mdp), bonds with hydrogen atoms were constrained using P-LINCS. 
