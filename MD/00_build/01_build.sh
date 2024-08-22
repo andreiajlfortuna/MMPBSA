@@ -13,6 +13,9 @@ if [ $# != 2 ]; then
     exit 1
 fi
 
+grom=/gromacs/gromacs-2020.6-GPU/bin/gmx
+export AMBERHOME=/home/pjcosta/bin/amber/amber16
+
 ##########################################
 # Read input variables
 ##########################################
@@ -84,8 +87,7 @@ echo "Molecule ${bname} has ${ncl} Chlorine atoms and ${ni} Iodine atoms." >&2
 fi
 echo "totX is ${totX}"
 echo "dEPs are $dEP1 and $dEP2"
-grom=/gromacs/gromacs-2020.6-GPU/bin/gmx
-export AMBERHOME=/home/pjcosta/bin/amber/amber16
+
 
 pdblig=`ls *EP_aligned.pdb`
 
