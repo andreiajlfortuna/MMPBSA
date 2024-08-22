@@ -24,8 +24,13 @@ lig=$2
 ####################
 
 ######################################################
-# verify halogens
+# verify halogens and EPs
 ######################################################
+# for this library, some ligands possess two different halogen types 
+# therefore, we need to check the number of halogens and their type 
+# the EPs are added according to this info (if two halogen types then: dEP1 and dEP2)
+
+
 mol2=`ls *.mol2`
 
 ncl=`cat ${mol2} | awk '$6 == "cl"' | wc -l`
