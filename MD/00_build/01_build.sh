@@ -181,6 +181,11 @@ sed -i "${NLi},${NLf}d" ${lig}.itp
 #run pb2gmx to create top
 pdbsys=`ls *chainA_aligned.pdb`
 
+############################# 
+# PROTEIN PROTONATION STATE #
+############################# 
+# CHECK PROTONATION STATES USING: https://pypka.org/
+# for this case we have to be careful with:
 ## 1 - HIE ; 99, 142, 148, 154, 160, 177, 230, 233, 270, 285, 315,  
 ## 0 - HID ; 303
 $grom pdb2gmx -f ${pdbsys} -p ${sys}.top -o ${sys}.gro -ff amber99sb-ildn -water tip3p -ignh -merge all -renum -ter -his <<EOF
