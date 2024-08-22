@@ -1,0 +1,10 @@
+In this step, a production run of 10 ns is performed using the same conditions as in the last step of initialization/equilibration. 
+
+For all steps, the van der Waals interactions were truncated at 1.0 nm, whereas for the electrostatic interactions, a 1.0 nm cutoff for direct contributions was used. 
+
+Long-range electrostatic interactions were treated with the fast smooth particle-mesh Ewald (PME) method.
+
+**BE CAREFUL**: in the slurm_MD.dat file you should change the following variables:
+- sys=XXX (here: 1J91)
+- lig=YYY (here: TBS)
+- rep=ZZZ (1)
