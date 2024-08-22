@@ -1,0 +1,10 @@
+The initialization is divided in two steps:
+
+- First step consists in a NVT simulation during 100 ps using the Berendsen thermostat to gradually heat the system to
+ 298.15 K;
+- The second step is a NPT ensemble (100 ps) with a Parrinello-Rahman barostat to couple the pressure (1 atm) 
+two initialization steps were performed and three replicates were obtained.
+ 
+r1 corresponds to replicate number one. Different replicates can be obtained since a random seed is used to generate the inital velocities 
+(gen_seed            =  -1)
+ 
