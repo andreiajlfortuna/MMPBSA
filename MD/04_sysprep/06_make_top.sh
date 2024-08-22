@@ -1,10 +1,11 @@
 #!/bin/bash -e
 # Variable to invoke the program GROMACS
 grom=/gromacs/gromacs-2020.6/bin/gmx
-tpr=../03_prod_r1/001.tpr
-index=../00_build/*_index.ndx
 export AMBERHOME=/home/pjcosta/bin/amber/amber20-with-ep
 source /home/pjcosta/bin/amber/amber20-with-ep/amber.sh
+
+tpr=../03_prod_r1/001.tpr
+index=../00_build/*_index.ndx
 
 #make index
 ${grom} make_ndx -n ${index} -o _GMXMMPBSA_COM_index.ndx<<EOF
