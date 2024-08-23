@@ -3,7 +3,9 @@ This folder has 8 individual scritps but you can make one if you prefer. Persona
 - **01_create_rst_files.sh**: for each frame from the trajectory (n_frames=1000, starting in 1) creates a rst file using cpptraj.
 
 - **02_create_folders.sh**: it creates folders using the logic: creates first a folder for each dilectric constant (epsilon) value (here I tested 3 values) and inside it creates a folder for each PB radii setup (here i tested three: pb1 - parse; pb2 - mbondi; pb3 - default of MMPBSA.py). 
+
 I also tested the use of optimized radii (ropt) and standard (rstd) and so this script creates a separate folder for each within the corresponding PB radii setup. 
+
 It is important that you have the pb.in files with the right parameters for each PB radii setup (here I have the example for epsilon = 4). 
 
 - 03_
