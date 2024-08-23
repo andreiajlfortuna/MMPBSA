@@ -16,7 +16,7 @@ mkdir ${setup}/
 
 cd ${setup}/
 
-ln -s /home/afortuna/mm-pbsa-ck2/systems_build/set_B/${setup}_${i}.in pb.in
+ln -s ../../${setup}.in pb.in 
 
 for radii in rstd ropt
 
