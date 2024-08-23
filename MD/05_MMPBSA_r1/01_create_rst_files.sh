@@ -15,7 +15,7 @@ fi
 
 rep=$1
 
-n_frames=2000
+n_frames=1000
 init_frame=1
 
 
