@@ -1,7 +1,9 @@
 grom=/gromacs/gromacs-2020.6/bin/gmx
 
-dir=/home/afortuna/mm-pbsa-ck2/systems_build/set_B/scripts_EP1/MD
+ 
 mkdir graphics
+
+
 tot_rep=3
 
 for rep in $(seq 1 1 $tot_rep)
@@ -101,10 +103,8 @@ Binding_site
 EOF
 
 mv *.xvg graphics/.
-
+mv rmsdgraphic_r${rep}.plot graphics/.
 cd graphics/
-
-ln -s ${dir}/rmsdgraphic_r${rep}.plot
 
 gnuplot rmsdgraphic_r${rep}.plot
 
