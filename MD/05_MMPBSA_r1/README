@@ -1,0 +1,6 @@
+n_frames=1000
+init_frame=1
+
+01_create_rst_files.sh
+
+cpptraj
