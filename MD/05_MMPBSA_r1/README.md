@@ -1,4 +1,4 @@
-This folder has 8 individual scritps but you can make one if you prefer. Personally, I think that having a separate script for each crucial step enhances both overall organization and the ability to identify errors. 
+This folder has 8 individual scritps but you can make one if you prefer. Personally, I think that having a separate script for each crucial step enhances both overall organization and the ability to identify errors. Moreover, you have a lot of variables that you can change and thus, it is important to understand in which steps you should make those decisions.
 
 - **01_create_rst_files.sh**: for each frame from the trajectory (n_frames=1000, starting in 1) creates a rst file using cpptraj.
 
