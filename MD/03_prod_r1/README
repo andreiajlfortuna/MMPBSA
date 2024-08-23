@@ -4,7 +4,9 @@ For all steps, the van der Waals interactions were truncated at 1.0 nm, whereas 
 
 Long-range electrostatic interactions were treated with the fast smooth particle-mesh Ewald (PME) method.
 
+You need to run slurm_MD.sh to run the simulations. It uses the slurm_MD.dat and generic_input.mdp file (each has the parameters required for the simulation)
+
 **BE CAREFUL**: in the slurm_MD.dat file you should change the following variables:
 - sys=XXX (here: 1J91)
 - lig=YYY (here: TBS)
-- rep=ZZZ (1)
+- rep=ZZZ (here: 1)
