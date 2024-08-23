@@ -8,11 +8,11 @@ echo "this considers ${n_frames}"
 
 rm -rf FINAL_RESULTS_${n_frames}
 
-for i in 2
+for i in 1 2 4
 
 do
 
-for setup in pb2 pb3
+for setup in pb1 pb2 pb3
 
 do
 
