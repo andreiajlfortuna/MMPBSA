@@ -1,0 +1,7 @@
+Sample single point PB calculation
+&cntrl
+ipb=2,inp=2,
+/
+&pb
+npbverb=1,istrng=0,saopt=1,radiopt=1,epsin=4
+/
