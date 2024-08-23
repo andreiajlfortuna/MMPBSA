@@ -9,4 +9,4 @@ The MD folder is divided into the following steps (folders):
 - **01_min**: Runs minimization.
 - **02_init_r1**: Runs initialization (r1 corresponds to one replicate, ideally you should have at least three).
 - **03_prod_r1**: Runs MD production.
-- **04_sysprep**:
+- **04_sysprep**: extract trajectories, create graphics and transforms the topology from GROMACS to be compatible with amber
