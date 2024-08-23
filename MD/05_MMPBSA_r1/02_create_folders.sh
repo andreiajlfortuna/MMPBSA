@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-for i in 1 2 4
+for i in 4
 
 do
 
@@ -16,7 +16,7 @@ mkdir ${setup}/
 
 cd ${setup}/
 
-ln -s ../../${setup}.in pb.in 
+ln -s ../../${setup}_${i}.in pb.in 
 
 for radii in rstd ropt
 
