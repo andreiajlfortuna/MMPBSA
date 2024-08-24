@@ -9,4 +9,5 @@ The MD folder is divided into the following steps (folders):
 - **01_min**: Runs minimization.
 - **02_init_r1**: Runs initialization (r1 corresponds to one replicate, ideally you should have at least three).
 - **03_prod_r1**: Runs MD production.
-- **04_sysprep**: extract trajectories, create graphics and transforms the topology from GROMACS to be compatible with amber
+- **04_sysprep**: Extract trajectories, create graphics, and transform the pdb (structure) from GROMACS to be compatible with amber to create proper topologies (with PB radii).
+- **05_MMPBSA_r1**: Extracts .rst files from the MD trajectories, corrects topologies, prepares files, and runs PBSA calculations for each frame.
