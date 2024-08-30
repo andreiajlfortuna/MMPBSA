@@ -10,6 +10,9 @@ Usage:
 METHOD (e.g. EP1, EP2, EP3, no_EP)
 """
 
+# Use the current directory for the run_MDanalysis_O-N-S script
+current_dir = os.getcwd() 
+
 # Function to replace placeholders in a file
 def replace_in_file(file_path, replacements):
     """
@@ -69,7 +72,7 @@ def process_results(donor, rep):
                     writer.writerow(shortest)
 
     print(f" #################################### ")
-    print(f"{donor} {rep} was done!")
+    print(f"{rec} {lig} {donor} {rep} was done!")
     print(f" #################################### ")
 
 # Parse arguments
@@ -78,8 +81,7 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 method = sys.argv[1]
-
-dir_path = "/home/afortuna/mm-pbsa-ck2/systems_build/set_A/XBs_HBs_count/scripts_count_XBs"
+ 
 
 # Loop through receptor-ligand pairs
 with open("../dGexp_setA", "r") as file:
@@ -140,8 +142,10 @@ with open("../dGexp_setA", "r") as file:
                 for i in range(1, n_atoms + 1):
                     donor = f"{donor_type}{i}"
                     for rep in range(1, 4):
-                        # Copy and prepare the run_MDanalysis script
-                        shutil.copy(os.path.join(dir_path, "run_MDanalysis_O-N-S"), "run_MDanalysis")
+                        
+                        # Copy and prepare the run_MDanalysis script from the current directory
+                        shutil.copy(os.path.join(current_dir, "run_MDanalysis_O-N-S"), "run_MDanalysis")
+ 
 
                         # Prepare replacements for placeholders
                         replacements = {
