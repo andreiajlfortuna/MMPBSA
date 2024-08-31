@@ -100,10 +100,7 @@ with open("../dGexp_setA", "r") as file:
         os.mkdir(hb_dir)
         os.chdir(hb_dir)
 
-        if os.path.exists("MIN_SUMMARY"):
-            os.remove("MIN_SUMMARY")
-
-        itp_file = f"../{lig}.itp"
+         itp_file = f"../{lig}.itp"
 
         # Count hydrogen bond donors and acceptors
         nN = nO = nS = nH = 0
