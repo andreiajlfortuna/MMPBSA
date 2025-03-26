@@ -1,16 +1,37 @@
-This project has the machinery (scripts and files) I used to run MM-PBSA simulations using an extra-point (EP) to describe the halogen anisotropy. This method allows the sampling of halogen bonds without impairing the sampling of hydrogen bonds and was extremely useful for my PhD thesis, where I studied the role of noncovalent interactions in solvation and membrane permeability. This approach was validated by comparing the results obtained with gmx_MMPBSA (https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/) for systems without EP.  
+# 🧪 MM-PBSA Simulations with Extra-Point (EP) for Halogen Anisotropy
 
-The example given here (PDB:1J91) corresponds to one system studied in the work "Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations" (preprint available in: https://doi.org/10.26434/chemrxiv-2024-l32nf). In this study, optimized halogen PB radii and several EP to study halogen bonds in binding free energies for three sets of CK2-inhibitor complexes were used.
+This project contains the **machinery (scripts and files)** used to run **MM-PBSA simulations** incorporating an **extra-point (EP)** to describe halogen anisotropy. This method enables proper sampling of **halogen bonds** without disrupting **hydrogen bond** interactions. It played a crucial role in my **PhD thesis**, where I explored **noncovalent interactions** in solvation and membrane permeability. 
 
-The MD folder is divided into the following steps (folders):
+✅ This approach was validated by comparing results with [gmx_MMPBSA](https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/) for systems without EP. 
 
-- **00_build**: Builds and prepares the system for minimization.
-- **01_min**: Runs minimization.
-- **02_init_r1**: Runs initialization (r1 corresponds to one replicate, ideally you should have at least three).
-- **03_prod_r1**: Runs MD production.
-- **04_sysprep**: Extract trajectories, create graphics, and transform the pdb (structure) from GROMACS to be compatible with amber to create proper topologies (with PB radii).
-- **05_MMPBSA_r1**: Extracts .rst files from the MD trajectories, corrects topologies, prepares files, and runs PBSA calculations for each frame.
+## 🧩 Example System
+The provided example (PDB: **1J91**) was studied in the work:
+📄 *Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (Preprint: [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-l32nf)).
 
-The analysis folder is divided into:
-- **HBs_and_XBs**
-- **correlations**
+🔬 This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
+
+---
+
+## 📂 Project Structure
+### 🔹 **Molecular Dynamics (MD) Folder**
+The MD folder is organized into sequential steps:
+
+- **📁 00_build** – Prepares the system for minimization.
+- **📁 01_min** – Runs energy minimization.
+- **📁 02_init_r1** – Initializes the simulation (**r1** = replicate 1; ideally, at least three replicates are needed).
+- **📁 03_prod_r1** – Runs MD production.
+- **📁 04_sysprep** – Extracts trajectories, generates visualizations, and converts **GROMACS** structures for **Amber** compatibility (including PB radii).
+- **📁 05_MMPBSA_r1** – Extracts `.rst` files, corrects topologies, prepares input files, and executes **PBSA calculations** for each frame.
+
+### 📊 **Analysis Folder**
+This folder includes post-processing analysis:
+- **📁 HBs_and_XBs** – **Hydrogen bonds** & **halogen bonds** analysis.
+- **📁 correlations** – Statistical correlation analyses.
+
+---
+
+## 🚀 Getting Started
+To use this project, please ensure you install the required dependencies and follow the structured workflow outlined above. Feel free to modify the scripts to fit your system. 💡
+
+ 
+
