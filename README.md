@@ -4,15 +4,15 @@ This project contains the **machinery (scripts and files)** used to run **MM-PBS
 
 ✅ This approach was validated by comparing results with [gmx_MMPBSA](https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/) for systems without EP. 
 
-## 🧩 Example System
+## Example System
 The provided example (PDB: **1J91**) was studied in the work:
 📄 *Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (Preprint: [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-l32nf)).
 
-🔬 This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
+This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ### 🔹 **Molecular Dynamics (MD) Folder**
 The MD folder is organized into sequential steps:
 
@@ -30,8 +30,6 @@ This folder includes post-processing analysis:
 
 ---
 
-## 🚀 Getting Started
-To use this project, please ensure you install the required dependencies and follow the structured workflow outlined above. Feel free to modify the scripts to fit your system. 💡
 
  
 
