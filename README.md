@@ -6,7 +6,10 @@ This approach was validated by comparing results with [gmx_MMPBSA](https://valde
 
 ## Example System
 The provided example (PDB: **1J91**) was studied in the work:
-*Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (Preprint: [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-l32nf)).
+*Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (DOI: [10.1039/d5cp03537f](https://doi.org/10.1039/d5cp03537f)).
+
+<img width="520" height="287" alt="image" src="https://github.com/user-attachments/assets/ee3ca4d2-3449-4a53-babd-17cdadaf0bf3" />
+
 
 This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
 
