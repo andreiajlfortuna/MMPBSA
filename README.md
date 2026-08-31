@@ -1,12 +1,12 @@
-# 🧪 MM-PBSA Simulations with Extra-Point (EP) for Halogen Anisotropy
+# MM-PBSA Simulations with Extra-Point (EP) for Halogen Anisotropy
 
 This project contains the **machinery (scripts and files)** used to run **MM-PBSA simulations** incorporating an **extra-point (EP)** to describe halogen anisotropy. This method enables proper sampling of **halogen bonds** without disrupting **hydrogen bond** interactions. It played a crucial role in my **PhD thesis**, where I explored **noncovalent interactions** in solvation and membrane permeability. 
 
-✅ This approach was validated by comparing results with [gmx_MMPBSA](https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/) for systems without EP. 
+This approach was validated by comparing results with [gmx_MMPBSA](https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/) for systems without EP. 
 
 ## Example System
 The provided example (PDB: **1J91**) was studied in the work:
-📄 *Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (Preprint: [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-l32nf)).
+*Impact of the halogen PB radii in the estimation of protein-ligand binding energies using MM-PBSA calculations* (Preprint: [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-l32nf)).
 
 This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
 
