@@ -11,7 +11,7 @@ The provided example (PDB: **1J91**) was studied in our work:
 <p align="center"><img width="520" height="287" alt="image" src="https://github.com/user-attachments/assets/ee3ca4d2-3449-4a53-babd-17cdadaf0bf3" />
 
 
-This study optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
+In this study we optimized **halogen PB radii** and several **EP models** to investigate halogen bonds in binding free energy calculations for **three sets of CK2-inhibitor complexes**.
 
 ---
 
